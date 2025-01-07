@@ -10,7 +10,20 @@ $ pip install pycounts_az1990
 
 ## Usage
 
-- TODO
+
+`pycounts_az1990` can be used to count words in a text file and plot results
+as follows:
+
+```python
+from pycounts_az1990.pycounts_az1990 import count_words
+from pycounts_az1990.plotting import plot_words
+import matplotlib.pyplot as plt
+
+file_path = "test.txt"  # path to your file
+counts = count_words(file_path)
+fig = plot_words(counts, n=10)
+plt.show()
+```
 
 ## Contributing
 
